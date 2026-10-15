@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marina Melo Haas – Consultoria em Gestão</title>
-<meta name="description" content="Consultoria e mentoria em gestão empresarial para pequenas e médias empresas: processos, números, estratégia e liderança.">
+<meta name="description" content="Consultoria e mentoria em gestão empresarial para pequenas e médias empresas: processos, dados, estratégia e liderança.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://marina-consultoria.vercel.app/">
 <meta property="og:site_name" content="Marina Melo Haas">
 <meta property="og:title" content="Marina Melo Haas – Consultoria em Gestão Empresarial">
-<meta property="og:description" content="Consultoria e mentoria em gestão para pequenas e médias empresas: processos, números, estratégia e liderança.">
+<meta property="og:description" content="Consultoria e mentoria em gestão para pequenas e médias empresas: processos, dados, estratégia e liderança.">
 <meta property="og:image" content="https://marina-consultoria.vercel.app/retrato.jpg">
 <meta property="og:image:width" content="960">
 <meta property="og:image:height" content="1200">
@@ -40,8 +40,8 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 #triade .node:focus-visible .dot{stroke-width:4}
 #triade .ring{opacity:0;transform-box:fill-box;transform-origin:center}
 #triade .node.ativo .ring{animation:pulso 2s ease-out infinite}
-@keyframes pulso{0%{opacity:.55;transform:scale(1)}100%{opacity:0;transform:scale(1.45)}}
-#triade line{transition:stroke .4s ease, stroke-width .4s ease}
+@keyframes pulso{0%{opacity:.55;transform:scale(1)}100%{opacity:0;transform:scale(1.45)}}#triade .node.lid.ativo .ring{animation:pulsoT 2.2s ease-out infinite}@keyframes pulsoT{0%{opacity:.6;transform:scale(1)}100%{opacity:0;transform:scale(1.12)}}
+#triade polygon{transition:stroke-width .4s ease}#triade .lt{transition:fill .3s}#triade .node.lid:hover #n3,#triade .node.lid:focus-visible #n3{stroke-width:6}#triade .node.lid .ring{transform-box:view-box;transform-origin:200px 223px}
 #c-card>*{transition:opacity .3s ease, transform .3s ease}
 #c-card.trocando>*{opacity:0;transform:translateY(8px)}
 #c-items li{display:flex;gap:10px;align-items:flex-start;opacity:0;transform:translateX(-8px);animation:entra .45s ease forwards}
@@ -57,6 +57,7 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 @media (min-width: 900px){.hero{grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr) !important}}
 .btn1{transition:background .25s, transform .2s}.btn1:hover{background:#0F2A31 !important;color:#FFFFFF !important;transform:translateY(-2px)}
 .btn2{transition:border-color .25s, transform .2s}.btn2:hover{border-color:#163B45 !important;transform:translateY(-2px)}
+.mais[hidden]{display:none !important}.saiba[aria-expanded="true"] .seta-s{transform:rotate(180deg)}.saiba:hover{color:#163B45 !important}
 #menu-btn{display:none}
 @media (max-width: 760px){
  #topo>div{padding:12px 20px !important;flex-wrap:nowrap !important}
@@ -121,10 +122,10 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 <!-- Hero -->
 <header id="inicio" class="hero" style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 64px; align-items: center">
 <div class="reveal" style="display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8A5F17"><span aria-hidden="true" style="width: 28px; height: 2px; background: #B98228; border-radius: 2px"></span>Consultoria e mentoria em gestão</p>
+<p style="margin: 0; display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8A5F17"><span aria-hidden="true" style="width: 28px; height: 2px; background: #B98228; border-radius: 2px"></span>Organização. Decisão. Crescimento.</p>
 <h1 class="h1" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 48px; line-height: 1.08; letter-spacing: -0.01em; color: #163B45; max-width: 15em">Toda empresa que cresce precisa de uma gestão à altura.</h1>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #2B3135; max-width: 34rem">Sou Marina Melo Haas, administradora e consultora de gestão. Trabalho ao lado de empresários de pequenas e médias empresas que querem crescer com mais organização, clareza e segurança nas decisões.</p>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5A6368; max-width: 34rem">Com método, acompanhamento próximo e um olhar estratégico sobre o negócio, ajudo você a organizar a operação, transformar números em decisões e desenvolver uma equipe que assume responsabilidades.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #2B3135; max-width: 34rem">Sou Marina Melo Haas, administradora e consultora empresarial. Trabalho ao lado de donos de pequenas e médias empresas que querem crescer com mais organização, clareza e segurança nas decisões.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5A6368; max-width: 34rem">Com método, didática e acompanhamento próximo, ajudo você a organizar a operação e a transformar dados em decisões, ideias em ações e equipes em times mais autônomos e responsáveis.</p>
 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px">
 <a href="#contato" class="btn1" style="padding: 14px 24px; background: #163B45; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 999px; display: inline-flex; align-items: center; gap: 8px">Agendar conversa de diagnóstico <span aria-hidden="true">→</span></a>
 <a href="#metodo" class="btn2" style="padding: 13px 23px; border: 1.5px solid #C7D3D6; color: #163B45; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 999px">Conhecer o método</a>
@@ -132,14 +133,15 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 <div style="display: flex; gap: 8px 22px; flex-wrap: wrap; margin-top: 4px; font-size: 14px; color: #5A6368">
 <span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B98228" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Presencial ou online</span>
 <span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B98228" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Empresas de todo o Brasil</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B98228" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Administradora registrada no CRA-RS nº 056707/O</span>
 </div>
 </div>
 <div class="fotohero reveal" style="position: relative; justify-self: center; width: 100%; max-width: 400px">
 <div class="moldura" style="position: absolute; top: 18px; left: 18px; right: -18px; bottom: -18px; border: 2px solid #B98228; border-radius: 24px"></div>
 <img src="retrato.jpg" alt="Retrato de Marina Melo Haas" style="position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; background: #E4E9EA">
 <div class="selo-hero" style="position: absolute; left: -28px; bottom: 36px; padding: 14px 18px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 16px; box-shadow: 0 14px 30px rgba(22,59,69,0.12); display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Tríade da Gestão</span>
-<span style="font-size: 15px; font-weight: 600; color: #163B45">Processos · Números · Estratégia</span>
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">A Tríade</span>
+<span style="font-size: 15px; font-weight: 600; color: #163B45">Processos · Dados · Estratégia</span>
 </div>
 </div>
 </header>
@@ -180,7 +182,7 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 <article class="card reveal" style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Fatura, mas não sabe quanto sobra</h3>
-<p style="margin: 0; color: #4A5357">Os números chegam tarde, ou chegam, mas não ajudam a decidir o que fazer na próxima semana.</p>
+<p style="margin: 0; color: #4A5357">Os dados chegam tarde, ou chegam, mas não ajudam a decidir o que fazer na próxima semana.</p>
 </article>
 <article class="card reveal" style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>
@@ -199,8 +201,8 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 <section style="background: #0F2A31; color: #FFFFFF">
 <div class="sec" style="max-width: 980px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 24px">
 <svg width="44" height="44" viewBox="0 0 24 24" fill="#E2B864" aria-hidden="true"><path d="M4 18v-5c0-4 2-7 6-8l1 2c-2 1-3 2.5-3 5h3v6H4zm9 0v-5c0-4 2-7 6-8l1 2c-2 1-3 2.5-3 5h3v6h-7z"></path></svg>
-<p class="quote" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1.25; font-weight: 400">Todo empresário tem visão e conhece seu negócio. O que muitas vezes falta é alguém ao seu lado para trazer método à gestão, transformar ideias em ações e oferecer os feedbacks honestos necessários para evoluir.</p>
-<p style="margin: 0; font-size: 18px; color: #D3DEE0">Esse é o meu papel: ajudar você a tomar decisões com mais clareza, estruturar a gestão e transformar planos em resultados, acompanhando de perto a realidade da sua empresa.</p>
+<p class="quote" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1.25; font-weight: 400">Todo empresário tem visão, conhece seu negócio e sabe onde quer chegar. Mas, muitas vezes, falta alguém ao seu lado para transformar ideias em planejamento e planejamento em execução.</p>
+<p style="margin: 0; font-size: 18px; color: #D3DEE0">É aí que eu entro: trazendo método para a gestão, organização para a operação e acompanhamento para fazer as coisas acontecerem na prática.</p>
 </div>
 </section>
 
@@ -208,41 +210,42 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 <section id="metodo" class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
 <div class="reveal" style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">O método</p>
-<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">A Tríade da Gestão</h2>
-<p style="margin: 0; font-size: 18px; color: #4A5357">Três pilares que sustentam uma empresa bem gerida: processos, números e estratégia. No centro, a liderança, que transforma informações e planos em decisões e comportamentos no dia a dia.</p>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">A Tríade</h2>
+<p style="margin: 0; font-size: 18px; color: #4A5357">Três pilares que sustentam uma empresa bem gerida: processos, dados e estratégia. Envolvendo os três, a liderança, que une os pilares e transforma informações e planos em decisões e comportamentos no dia a dia.</p>
 </div>
 <div class="gg" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 48px; align-items: center">
 <div class="reveal" style="width: 100%; max-width: 460px; justify-self: center; display: flex; flex-direction: column; align-items: center; gap: 10px">
-<svg id="triade" viewBox="0 0 400 370" width="100%" aria-label="Diagrama interativo da Tríade da Gestão: processos, números e estratégia nos vértices de um triângulo, com a liderança no centro">
-<polygon points="200,50 50,310 350,310" fill="none" stroke="#C7D3D6" stroke-width="2"></polygon>
-<line id="l0" x1="200" y1="50" x2="200" y2="215" stroke="#C7D3D6" stroke-width="1.5" stroke-dasharray="4 5"></line>
-<line id="l1" x1="50" y1="310" x2="200" y2="215" stroke="#C7D3D6" stroke-width="1.5" stroke-dasharray="4 5"></line>
-<line id="l2" x1="350" y1="310" x2="200" y2="215" stroke="#C7D3D6" stroke-width="1.5" stroke-dasharray="4 5"></line>
+<svg id="triade" viewBox="-30 -20 460 400" width="100%" aria-label="Diagrama interativo da Tríade: processos, dados e estratégia nos vértices de um triângulo, com a liderança formando o contorno que une os três">
+<polygon points="200,50 50,310 350,310" fill="#FFFFFF" fill-opacity="0.55" stroke="none"></polygon>
+<g class="node lid" data-i="3" tabindex="0" role="button" aria-label="Ver detalhes da Liderança">
+<polygon points="200,50 50,310 350,310" fill="transparent" stroke="transparent" stroke-width="30" stroke-linejoin="round" style="pointer-events:all"></polygon>
+<polygon class="ring" points="200,50 50,310 350,310" fill="none" stroke="#B98228" stroke-width="3" stroke-linejoin="round"></polygon>
+<polygon id="n3" points="200,50 50,310 350,310" fill="none" stroke="#B98228" stroke-width="3" stroke-linejoin="round"></polygon>
+<text class="lt" id="t3" x="200" y="342" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="13" font-weight="600" letter-spacing="3" fill="#8A5F17">LIDERANÇA</text>
+<text class="lt" x="0" y="0" transform="translate(108 170) rotate(-60)" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="13" font-weight="600" letter-spacing="3" fill="#8A5F17">LIDERANÇA</text>
+<text class="lt" x="0" y="0" transform="translate(292 170) rotate(60)" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="13" font-weight="600" letter-spacing="3" fill="#8A5F17">LIDERANÇA</text>
+</g>
+<text x="200" y="222" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="22" fill="#8A9599" style="pointer-events:none">A Tríade</text>
 <g class="node" data-i="0" tabindex="0" role="button" aria-label="Ver detalhes do pilar Processos">
 <circle class="ring" cx="200" cy="50" r="44" fill="none" stroke="#163B45" stroke-width="2"></circle>
 <circle class="dot" id="n0" cx="200" cy="50" r="44" fill="#FFFFFF" stroke="#163B45" stroke-width="2"></circle>
 <text x="200" y="55" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t0" fill="#163B45">Processos</text>
 </g>
-<g class="node" data-i="1" tabindex="0" role="button" aria-label="Ver detalhes do pilar Números">
+<g class="node" data-i="1" tabindex="0" role="button" aria-label="Ver detalhes do pilar Dados">
 <circle class="ring" cx="50" cy="310" r="44" fill="none" stroke="#163B45" stroke-width="2"></circle>
 <circle class="dot" id="n1" cx="50" cy="310" r="44" fill="#FFFFFF" stroke="#163B45" stroke-width="2"></circle>
-<text x="50" y="315" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t1" fill="#163B45">Números</text>
+<text x="50" y="315" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t1" fill="#163B45">Dados</text>
 </g>
 <g class="node" data-i="2" tabindex="0" role="button" aria-label="Ver detalhes do pilar Estratégia">
 <circle class="ring" cx="350" cy="310" r="44" fill="none" stroke="#163B45" stroke-width="2"></circle>
 <circle class="dot" id="n2" cx="350" cy="310" r="44" fill="#FFFFFF" stroke="#163B45" stroke-width="2"></circle>
 <text x="350" y="315" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t2" fill="#163B45">Estratégia</text>
 </g>
-<g class="node" data-i="3" tabindex="0" role="button" aria-label="Ver detalhes do pilar Liderança">
-<circle class="ring" cx="200" cy="215" r="50" fill="none" stroke="#B98228" stroke-width="2"></circle>
-<circle class="dot" id="n3" cx="200" cy="215" r="50" fill="#FFFFFF" stroke="#B98228" stroke-width="2.5"></circle>
-<text x="200" y="220" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t3" fill="#163B45">Liderança</text>
-</g>
 </svg>
 <p style="margin: 0; font-size: 14px; color: #5A6368; display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11V5a2 2 0 0 1 4 0v6M13 10a2 2 0 0 1 4 0v2M17 11a2 2 0 0 1 4 0v4a6 6 0 0 1-6 6h-2a6 6 0 0 1-5-3l-3-5a2 2 0 0 1 3-2l2 2V9"></path></svg>Toque em cada pilar para explorar</p>
 </div>
 <div class="reveal" style="display: flex; flex-direction: column; gap: 16px">
-<div id="pilares" role="tablist" aria-label="Pilares da Tríade da Gestão" style="display: flex; gap: 8px; flex-wrap: wrap"></div>
+<div id="pilares" role="tablist" aria-label="Pilares da Tríade" style="display: flex; gap: 8px; flex-wrap: wrap"></div>
 <div style="height: 3px; background: #DDE3E5; border-radius: 3px; overflow: hidden"><div id="progresso" style="height: 100%; width: 0; background: #B98228"></div></div>
 <article id="c-card" aria-live="polite" style="padding: 34px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 22px; display: flex; flex-direction: column; gap: 14px; min-height: 360px; box-sizing: border-box">
 <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
@@ -269,14 +272,14 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 <div class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">A transformação</p>
-<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">De uma empresa que depende de você para uma empresa que funciona com você</h2>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">De uma empresa que <em style="font-style: italic; color: #8A5F17">depende</em> de você para uma empresa que <em style="font-style: italic; color: #8A5F17">funciona</em> com você</h2>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 24px">
 <article class="reveal" style="padding: 34px; background: #F4F6F5; border-radius: 22px; display: flex; flex-direction: column; gap: 14px">
 <h3 style="margin: 0; font-size: 22px; font-weight: 600; color: #5A6368">Antes</h3>
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; color: #4A5357">
 <li>Atividades que só funcionam quando o dono está presente</li>
-<li>Números olhados no fim do mês, quando já é tarde para agir</li>
+<li>Dados olhados no fim do mês, quando já é tarde para agir</li>
 <li>Prioridades que mudam conforme a urgência do dia</li>
 <li>Equipe esperando ordens em vez de assumir responsabilidades</li>
 </ul>
@@ -298,37 +301,37 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Como funciona</p>
 <h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">A jornada da sua empresa</h2>
-<p style="margin: 0; font-size: 18px; color: #4A5357">Cada empresa tem seu ritmo, mas o caminho segue uma lógica: primeiro entender, depois organizar, ganhar clareza e, então, direcionar.</p>
+<p style="margin: 0; font-size: 18px; color: #4A5357">Cada empresa tem seu ritmo, mas o caminho segue uma lógica: primeiro entender o negócio, depois organizar, decidir com base em dados e, então, crescer com segurança.</p>
 </div>
 <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 20px">
 <li class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #B98228">01</span>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Diagnóstico</h3>
-<span style="font-size: 14px; font-weight: 600; color: #8A5F17">Mês 1</span>
-<p style="margin: 0; color: #4A5357; font-size: 16px">Imersão na operação, conversas com você e a equipe e um raio-x da tríade e da liderança. Termina com uma devolutiva e um plano de prioridades.</p>
+<span style="font-size: 14px; font-weight: 600; color: #8A5F17">Ponto de partida</span>
+<p style="margin: 0; color: #4A5357; font-size: 16px">Nessa etapa inicial, mergulhamos na realidade do seu negócio para entender a operação, ouvir você e sua equipe e identificar os principais desafios em processos, dados, estratégia e liderança.</p>
 </li>
 <li class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #B98228">02</span>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Organização</h3>
 <span style="font-size: 14px; font-weight: 600; color: #8A5F17">Processos</span>
-<p style="margin: 0; color: #4A5357; font-size: 16px">Mapeamento das atividades, gargalos, responsabilidades e padrões, para reduzir a dependência do dono.</p>
+<p style="margin: 0; color: #4A5357; font-size: 16px">Aqui o foco é organizar a operação. Aplicamos ferramentas para mapear atividades, identificar gargalos, definir responsabilidades e padronizar processos, reduzindo a dependência do empresário e tornando a equipe mais autônoma.</p>
 </li>
 <li class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #B98228">03</span>
-<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Clareza</h3>
-<span style="font-size: 14px; font-weight: 600; color: #8A5F17">Números</span>
-<p style="margin: 0; color: #4A5357; font-size: 16px">Indicadores, margens e metas organizados em um painel simples, para decidir com base em dados.</p>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Decisão</h3>
+<span style="font-size: 14px; font-weight: 600; color: #8A5F17">Dados</span>
+<p style="margin: 0; color: #4A5357; font-size: 16px">Nessa etapa, o foco é em resultados. Organizamos e analisamos os principais dados do seu negócio para acompanhar o desempenho, entender a rentabilidade e identificar oportunidades para melhorar os resultados da empresa.</p>
 </li>
 <li class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #B98228">04</span>
-<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Direção</h3>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Crescimento</h3>
 <span style="font-size: 14px; font-weight: 600; color: #8A5F17">Estratégia</span>
-<p style="margin: 0; color: #4A5357; font-size: 16px">Prioridades definidas, planos de ação e acompanhamento mensal da execução, corrigindo a rota quando preciso.</p>
+<p style="margin: 0; color: #4A5357; font-size: 16px">Definimos objetivos, prioridades e planos de ação alinhados à realidade do negócio. O foco é transformar a estratégia em ações práticas, orientar as decisões do empresário e acompanhar a execução para alcançar os resultados desejados.</p>
 </li>
 </ol>
 <div style="padding: 26px 30px; background: #163B45; color: #FFFFFF; border-radius: 20px; display: flex; gap: 18px; align-items: center; flex-wrap: wrap">
 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#E2B864" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4"></circle></svg>
-<p style="margin: 0; flex: 1; min-width: 240px"><strong style="color: #E2B864">Liderança em todas as etapas:</strong> feedbacks honestos e desenvolvimento do empresário e da equipe acontecem do primeiro ao último encontro.</p>
+<p style="margin: 0; flex: 1; min-width: 240px"><strong style="color: #E2B864">Liderança em todas as etapas:</strong> acompanhamento próximo para desenvolver o empresário como líder, oferecer feedbacks, aprimorar decisões e fortalecer a autonomia da equipe, mantendo a gestão alinhada à realidade da operação.</p>
 </div>
 </section>
 
@@ -446,24 +449,32 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Outros produtos</p>
 <h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 34px; line-height: 1.1; color: #163B45">Além da consultoria</h2>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 20px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 20px; align-items: start">
 <article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.5"></circle></svg>
 <h3 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 24px; line-height: 1.15; color: #163B45">Planejamento Estratégico</h3>
 <p style="margin: 0; color: #4A5357; font-size: 16px">Objetivos, metas e um plano de ação claro para os próximos passos do negócio.</p>
-<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20o%20Planejamento%20Estrat%C3%A9gico." style="margin-top: auto; padding-top: 4px; color: #8A5F17; text-decoration: none; font-weight: 600; font-size: 15px">Saiba mais →</a>
+<a href="planejamento.html" style="margin-top: auto; padding-top: 4px; color: #8A5F17; text-decoration: none; font-weight: 600; font-size: 15px">Saiba mais →</a>
 </article>
 <article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg>
 <h3 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 24px; line-height: 1.15; color: #163B45">Treinamentos</h3>
 <p style="margin: 0; color: #4A5357; font-size: 16px">Capacitações práticas em gestão e liderança para líderes e equipes.</p>
-<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20os%20Treinamentos." style="margin-top: auto; padding-top: 4px; color: #8A5F17; text-decoration: none; font-weight: 600; font-size: 15px">Saiba mais →</a>
+<button type="button" class="saiba" aria-expanded="false" aria-controls="mais-treinamentos" style="margin-top: auto; padding: 6px 0 0; background: none; border: 0; cursor: pointer; font: inherit; color: #8A5F17; font-weight: 600; font-size: 15px; text-align: left; display: inline-flex; align-items: center; gap: 6px">Saiba mais <span class="seta-s" aria-hidden="true" style="display: inline-block; transition: transform .3s">↓</span></button>
+<div id="mais-treinamentos" class="mais" hidden style="display: flex; flex-direction: column; gap: 12px; padding-top: 12px; border-top: 1px solid #E5EAEB">
+<p style="margin: 0; color: #4A5357; font-size: 15px">Treinamentos in company, desenhados a partir da realidade da sua empresa. Os temas podem incluir organização e padronização de processos, análise de dados e indicadores, gestão financeira, planejamento e liderança. São encontros práticos, com exemplos do dia a dia e exercícios aplicados, para que a equipe saia pronta para colocar o conteúdo em prática.</p>
+<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20os%20Treinamentos." style="align-self: flex-start; padding: 10px 18px; border-radius: 999px; background: #163B45; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 14px">Quero um treinamento →</a>
+</div>
 </article>
 <article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="11" rx="3"></rect><path d="M5 10a7 7 0 0 0 14 0M12 17v4M8 21h8"></path></svg>
 <h3 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 24px; line-height: 1.15; color: #163B45">Palestras</h3>
 <p style="margin: 0; color: #4A5357; font-size: 16px">Conteúdos sobre gestão e liderança para eventos e empresas.</p>
-<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20as%20Palestras." style="margin-top: auto; padding-top: 4px; color: #8A5F17; text-decoration: none; font-weight: 600; font-size: 15px">Saiba mais →</a>
+<button type="button" class="saiba" aria-expanded="false" aria-controls="mais-palestras" style="margin-top: auto; padding: 6px 0 0; background: none; border: 0; cursor: pointer; font: inherit; color: #8A5F17; font-weight: 600; font-size: 15px; text-align: left; display: inline-flex; align-items: center; gap: 6px">Saiba mais <span class="seta-s" aria-hidden="true" style="display: inline-block; transition: transform .3s">↓</span></button>
+<div id="mais-palestras" class="mais" hidden style="display: flex; flex-direction: column; gap: 12px; padding-top: 12px; border-top: 1px solid #E5EAEB">
+<p style="margin: 0; color: #4A5357; font-size: 15px">Palestras para eventos, associações, encontros empresariais e equipes, sobre gestão, liderança e organização. O conteúdo é direto, com linguagem acessível e exemplos reais, e é adaptado ao público e ao formato do evento, de uma fala curta a uma participação mais aprofundada.</p>
+<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20as%20Palestras." style="align-self: flex-start; padding: 10px 18px; border-radius: 999px; background: #163B45; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 14px">Quero uma palestra →</a>
+</div>
 </article>
 </div>
 </section>
@@ -473,7 +484,7 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 <div class="gg sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 48px; align-items: center">
 <div style="display: flex; flex-direction: column; gap: 16px">
 <h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1">Vamos olhar para a sua empresa juntos?</h2>
-<p style="margin: 0; color: #D3DEE0; font-size: 18px">Na primeira conversa, entendo o momento do seu negócio e mostro como a Tríade da Gestão pode ser aplicada na sua realidade. Sem compromisso.</p>
+<p style="margin: 0; color: #D3DEE0; font-size: 18px">Na primeira conversa, entendo o momento do seu negócio e mostro como a Tríade pode ser aplicada na sua realidade. Sem compromisso.</p>
 <a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina!%20Quero%20agendar%20uma%20conversa%20de%20diagn%C3%B3stico%20para%20a%20minha%20empresa." style="align-self: flex-start; margin-top: 8px; padding: 15px 26px; background: #E2B864; color: #1B1408; text-decoration: none; font-weight: 600; border-radius: 999px">Agendar pelo WhatsApp</a>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px">
@@ -492,9 +503,9 @@ h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
 (function(){
 var defs=[
 {title:'Processos',kicker:'Organização',heading:'Uma empresa que não depende só de você',text:'Organizar a rotina para que as coisas aconteçam do jeito certo, mesmo quando o dono não está olhando.',items:['Mapear as atividades da empresa','Identificar gargalos','Definir responsabilidades','Estabelecer padrões de trabalho','Reduzir a dependência do dono']},
-{title:'Números',kicker:'Clareza',heading:'Dados que viram decisões',text:'Transformar os números do negócio em informação útil para decidir, e não apenas para conferir no fim do mês.',items:['Definir os indicadores certos','Analisar resultados','Compreender as margens','Acompanhar metas','Transformar dados em decisões']},
-{title:'Estratégia',kicker:'Direção',heading:'Do feeling ao plano executado',text:'Dar forma à visão do empresário, com prioridades claras e acompanhamento até a execução.',items:['Estabelecer prioridades','Avaliar oportunidades','Questionar decisões','Definir planos de ação','Acompanhar a execução']},
-{title:'Liderança',kicker:'O que conecta os pilares',heading:'Gente que transforma planos em atitudes',text:'A liderança atravessa os três pilares: é ela que leva as informações e os planos para o comportamento do dia a dia.',items:['Desenvolver o empresário como líder','Desenvolver a equipe','Oferecer feedbacks honestos','Ajudar a corrigir a rota']}
+{title:'Dados',kicker:'Decisão',heading:'Dados que viram decisões',text:'Transformar os dados do negócio em informação útil para decidir, e não apenas para conferir no fim do mês.',items:['Definir os indicadores certos','Analisar resultados','Compreender as margens','Acompanhar metas','Transformar dados em decisões']},
+{title:'Estratégia',kicker:'Crescimento',heading:'Do feeling ao plano executado',text:'Dar forma à visão do empresário, com prioridades claras e acompanhamento até a execução.',items:['Estabelecer prioridades','Avaliar oportunidades','Questionar decisões','Definir planos de ação','Acompanhar a execução']},
+{title:'Liderança',kicker:'O que conecta os pilares',heading:'Gente que transforma planos em atitudes',text:'A liderança envolve os três pilares: é ela que une tudo e leva as informações e os planos para o comportamento do dia a dia.',items:['Desenvolver o empresário como líder','Desenvolver a equipe','Oferecer feedbacks honestos','Ajudar a corrigir a rota']}
 ];
 var box=document.getElementById('pilares'),card=document.getElementById('c-card'),barra=document.getElementById('progresso');
 var reduz=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -511,8 +522,8 @@ function preencher(s){var d=defs[s];
 function sel(s){
  if(s===atual)return;atual=s;
  btns.forEach(function(b,i){b.setAttribute('aria-selected',i===s?'true':'false')});
- nodes.forEach(function(n){var i=+n.getAttribute('data-i'),on=i===s;n.classList.toggle('ativo',on);document.getElementById('n'+i).setAttribute('fill',on?(i===3?'#B98228':'#163B45'):'#FFFFFF');document.getElementById('t'+i).setAttribute('fill',on?(i===3?'#1B1408':'#FFFFFF'):'#163B45');});
- for(var k=0;k<3;k++){var l=document.getElementById('l'+k),on=(s===3||s===k);l.setAttribute('stroke',on?'#B98228':'#C7D3D6');l.setAttribute('stroke-width',on?'2.5':'1.5');l.setAttribute('stroke-dasharray',on?'0':'4 5');}
+ nodes.forEach(function(n){var i=+n.getAttribute('data-i'),on=i===s;n.classList.toggle('ativo',on);if(i===3){document.getElementById('n3').setAttribute('stroke-width',on?'7':'3');document.querySelectorAll('#triade .lt').forEach(function(t){t.setAttribute('fill',on?'#B98228':'#8A5F17');t.setAttribute('font-size',on?'14':'13');});}else{document.getElementById('n'+i).setAttribute('fill',on?'#163B45':'#FFFFFF');document.getElementById('t'+i).setAttribute('fill',on?'#FFFFFF':'#163B45');}});
+ 
  if(reduz){preencher(s);return;}
  card.classList.add('trocando');setTimeout(function(){preencher(s);card.classList.remove('trocando')},220);
  t0=performance.now();
@@ -540,6 +551,8 @@ setInterval(function(){
  else{pos++;faixa.style.transition='transform 900ms ease';faixa.style.transform='translateX(-'+(pos*passoF())+'px)';}
 },3500);
 })();
+
+document.querySelectorAll('.saiba').forEach(function(b){b.addEventListener('click',function(){var d=document.getElementById(b.getAttribute('aria-controls')),ab=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',ab?'false':'true');d.hidden=ab;b.firstChild.textContent=ab?'Saiba mais ':'Ver menos ';});});
 </script>
 
 </body>

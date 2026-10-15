@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<script>document.documentElement.className+=" js"</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planejamento Estratégico – Marina Melo Haas</title>
+<meta name="description" content="Planejamento estratégico para pequenas e médias empresas: objetivos, metas e um plano de ação claro, construído junto com você e acompanhado na prática.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marina-consultoria.vercel.app/planejamento.html">
+<meta property="og:site_name" content="Marina Melo Haas">
+<meta property="og:title" content="Planejamento Estratégico – Marina Melo Haas">
+<meta property="og:description" content="Objetivos, metas e um plano de ação claro para os próximos passos do seu negócio.">
+<meta property="og:image" content="https://marina-consultoria.vercel.app/retrato.jpg">
+<meta property="og:image:width" content="960">
+<meta property="og:image:height" content="1200">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Marina Melo Haas">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+a{color:#163B45}a:hover{color:#8A5F17}
+h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
+
+.reveal{transition:opacity .7s ease, transform .7s ease}
+.js .reveal{opacity:0;transform:translateY(22px)}
+.js .reveal.in{opacity:1;transform:none}
+.card{transition:opacity .7s ease, transform .35s ease, box-shadow .35s ease, border-color .35s ease}
+.card.in:hover,.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(22,59,69,.10);border-color:#B98228 !important}
+#triade .node{cursor:pointer;outline:none}
+#triade .node .dot{transition:fill .35s ease, transform .3s ease;transform-box:fill-box;transform-origin:center}
+#triade .node text{transition:fill .35s ease;pointer-events:none}
+#triade .node:hover .dot,#triade .node:focus-visible .dot{transform:scale(1.08)}
+#triade .node:focus-visible .dot{stroke-width:4}
+#triade .ring{opacity:0;transform-box:fill-box;transform-origin:center}
+#triade .node.ativo .ring{animation:pulso 2s ease-out infinite}
+@keyframes pulso{0%{opacity:.55;transform:scale(1)}100%{opacity:0;transform:scale(1.45)}}#triade .node.lid.ativo .ring{animation:pulsoT 2.2s ease-out infinite}@keyframes pulsoT{0%{opacity:.6;transform:scale(1)}100%{opacity:0;transform:scale(1.12)}}
+#triade polygon{transition:stroke-width .4s ease}#triade .lt{transition:fill .3s}#triade .node.lid:hover #n3,#triade .node.lid:focus-visible #n3{stroke-width:6}#triade .node.lid .ring{transform-box:view-box;transform-origin:200px 223px}
+#c-card>*{transition:opacity .3s ease, transform .3s ease}
+#c-card.trocando>*{opacity:0;transform:translateY(8px)}
+#c-items li{display:flex;gap:10px;align-items:flex-start;opacity:0;transform:translateX(-8px);animation:entra .45s ease forwards}
+@keyframes entra{to{opacity:1;transform:none}}
+.seta{width:44px;height:44px;border-radius:999px;border:1.5px solid #C7D3D6;background:#FFFFFF;color:#163B45;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .25s, color .25s, border-color .25s}
+.seta:hover{background:#163B45;color:#FFFFFF;border-color:#163B45}
+.pil{min-height:44px;padding:10px 20px;border-radius:999px;font:inherit;font-size:16px;font-weight:600;cursor:pointer;transition:background .3s, color .3s, border-color .3s, transform .2s;background:#FFFFFF;color:#163B45;border:1.5px solid #C7D3D6}
+.pil:hover{border-color:#163B45;transform:translateY(-2px)}
+.pil[aria-selected="true"]{background:#163B45;color:#FFFFFF;border-color:#163B45}
+.pil.lid[aria-selected="true"]{background:#B98228;color:#1B1408;border-color:#B98228}
+
+
+@media (min-width: 900px){.hero{grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr) !important}}
+.btn1{transition:background .25s, transform .2s}.btn1:hover{background:#0F2A31 !important;color:#FFFFFF !important;transform:translateY(-2px)}
+.btn2{transition:border-color .25s, transform .2s}.btn2:hover{border-color:#163B45 !important;transform:translateY(-2px)}
+.mais[hidden]{display:none !important}.saiba[aria-expanded="true"] .seta-s{transform:rotate(180deg)}.saiba:hover{color:#163B45 !important}
+#menu-btn{display:none}
+@media (max-width: 760px){
+ #topo>div{padding:12px 20px !important;flex-wrap:nowrap !important}
+ #topo>div>a{font-size:20px !important}
+ #menu-btn{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:1.5px solid #C7D3D6;border-radius:12px;background:#FFFFFF;cursor:pointer}
+ #menu-btn span{display:block;height:2px;background:#163B45;border-radius:2px;transition:transform .3s, opacity .3s}
+ #topo.aberto #menu-btn span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+ #topo.aberto #menu-btn span:nth-child(2){opacity:0}
+ #topo.aberto #menu-btn span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+ #menu{display:none !important;position:absolute;top:100%;left:0;right:0;background:#F4F6F5;border-bottom:1px solid #DDE3E5;padding:8px 20px 20px;flex-direction:column;align-items:stretch !important;gap:2px !important;box-shadow:0 12px 24px rgba(22,59,69,.08)}
+ #topo.aberto #menu{display:flex !important}
+ #menu a{padding:14px 4px !important;font-size:17px !important;border-bottom:1px solid #E5EAEB}
+ #menu a:last-child{border-bottom:0;margin-top:12px;text-align:center;padding:14px !important}
+ .sec{padding-top:64px !important;padding-bottom:64px !important;padding-left:20px !important;padding-right:20px !important;gap:28px !important}
+ .hero{padding:40px 20px 64px !important;gap:44px !important}
+ .sec0{padding:0 20px 64px !important;gap:24px !important}
+ .secx{padding:64px 0 !important;gap:28px !important}
+ .secx>div:first-child{padding:0 20px !important}
+ .nums{padding:40px 20px !important;gap:24px !important}
+ .bignum{font-size:44px !important}
+ .h1{font-size:34px !important;line-height:1.1 !important}
+ .selo-hero{left:12px !important;bottom:16px !important;padding:12px 14px !important}
+ .h2{font-size:30px !important;line-height:1.15 !important}
+ .quote{font-size:25px !important;line-height:1.3 !important}
+ .gg{gap:32px !important}
+ .fotohero{max-width:calc(100% - 14px) !important;justify-self:start !important}
+ .moldura{top:14px !important;left:14px !important;right:-14px !important;bottom:-14px !important;border-radius:20px !important}
+ .selo{left:12px !important;bottom:16px !important;padding:14px 16px !important}
+ .fig{width:280px !important}
+ #faixa{padding-left:20px !important;gap:16px !important}
+ #faixa>div{gap:16px !important}
+ .card,article{padding:24px !important}
+ #c-card{min-height:0 !important}
+ #c-card h3{font-size:26px !important}
+ .hero a{flex:1 1 auto;text-align:center}
+ body{font-size:16px}
+}
+@media (max-width: 380px){.h1{font-size:31px !important}.h2{font-size:28px !important}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}.js .reveal{opacity:1;transform:none}#c-items li{opacity:1;transform:none}}
+</style>
+
+</head>
+<body>
+
+<div style="font-family: 'Instrument Sans', 'Segoe UI', Helvetica, sans-serif; color: #2B3135; background: #F4F6F5; font-size: 17px; line-height: 1.6">
+
+<!-- Navegação -->
+<nav id="topo" style="position: sticky; top: 0; z-index: 10; background: rgba(244,246,245,0.95); border-bottom: 1px solid #DDE3E5">
+<div style="max-width: 1180px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="index.html" style="font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 600; color: #163B45; text-decoration: none">Marina Melo Haas</a>
+<button type="button" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+<div id="menu" style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center">
+<a href="#para-quem" style="padding: 10px 12px; text-decoration: none; font-size: 15px; color: #2B3135">Para quem</a>
+<a href="#como-funciona" style="padding: 10px 12px; text-decoration: none; font-size: 15px; color: #2B3135">Como funciona</a>
+<a href="#entregas" style="padding: 10px 12px; text-decoration: none; font-size: 15px; color: #2B3135">Entregas</a>
+<a href="index.html" style="padding: 10px 12px; text-decoration: none; font-size: 15px; color: #2B3135">Consultoria</a>
+<a href="#contato" style="padding: 10px 18px; text-decoration: none; font-size: 15px; font-weight: 600; color: #FFFFFF; background: #163B45; border-radius: 999px">Agendar conversa</a>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<header id="inicio" class="hero" style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 64px; align-items: center">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8A5F17"><span aria-hidden="true" style="width: 28px; height: 2px; background: #B98228; border-radius: 2px"></span>Planejamento Estratégico</p>
+<h1 class="h1" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 48px; line-height: 1.08; letter-spacing: -0.01em; color: #163B45">Saiba aonde sua empresa quer chegar e como chegar lá.</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #2B3135; max-width: 34rem">Um projeto com início, meio e fim para definir objetivos, metas e um plano de ação claro, construído junto com você e alinhado à realidade do seu negócio.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5A6368; max-width: 34rem">Planejar não é produzir um documento bonito que fica na gaveta. É transformar a visão do empresário em prioridades, responsáveis e prazos, para que tudo aconteça na prática.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px">
+<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20o%20Planejamento%20Estrat%C3%A9gico%20para%20a%20minha%20empresa." class="btn1" style="padding: 14px 24px; background: #163B45; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 999px; display: inline-flex; align-items: center; gap: 8px">Quero planejar minha empresa <span aria-hidden="true">→</span></a>
+<a href="#como-funciona" class="btn2" style="padding: 13px 23px; border: 1.5px solid #C7D3D6; color: #163B45; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 999px">Ver como funciona</a>
+</div>
+</div>
+<div class="fotohero reveal" style="position: relative; justify-self: center; width: 100%; max-width: 460px">
+<div class="moldura" style="position: absolute; top: 18px; left: 18px; right: -18px; bottom: -18px; border: 2px solid #B98228; border-radius: 24px"></div>
+<img src="acao-2.jpg" alt="Marina orientando empresários durante uma atividade prática" style="position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; background: #E4E9EA">
+</div>
+</header>
+
+<!-- Para quem -->
+<section id="para-quem" class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Para quem é</p>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Sua empresa precisa de um planejamento estratégico se...</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 20px">
+<article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">O ano começa sem prioridades claras</h3>
+<p style="margin: 0; color: #4A5357; font-size: 16px">As urgências do dia a dia acabam decidindo o que a empresa faz.</p>
+</article>
+<article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h6"></path></svg>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">As metas estão só na sua cabeça</h3>
+<p style="margin: 0; color: #4A5357; font-size: 16px">A equipe não sabe exatamente aonde a empresa quer chegar.</p>
+</article>
+<article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"></path></svg>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">Muitas ideias, pouca execução</h3>
+<p style="margin: 0; color: #4A5357; font-size: 16px">Os planos são bons, mas não saem do papel ou se perdem no caminho.</p>
+</article>
+<article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"></path><path d="M14 7h7v7"></path></svg>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">A empresa cresce, mas sem rumo</h3>
+<p style="margin: 0; color: #4A5357; font-size: 16px">Você sente que poderia crescer mais, com mais segurança e menos improviso.</p>
+</article>
+</div>
+</section>
+
+<!-- Diferença -->
+<section style="background: #0F2A31; color: #FFFFFF">
+<div class="sec" style="max-width: 980px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 24px">
+<p class="quote reveal" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 36px; line-height: 1.25; font-weight: 400">Um bom planejamento não é o que fica bonito no papel. É o que a equipe entende, executa e acompanha todos os meses.</p>
+<p class="reveal" style="margin: 0; font-size: 18px; color: #D3DEE0">Por isso, o planejamento é construído junto com você, com linguagem simples e foco no que realmente move os resultados da sua empresa.</p>
+</div>
+</section>
+
+<!-- Como funciona -->
+<section id="como-funciona" class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Como funciona</p>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Do diagnóstico à execução</h2>
+<p style="margin: 0; font-size: 18px; color: #4A5357">Cinco etapas para sair das ideias e chegar a um plano claro e priorizado. E, se você quiser, a continuidade da consultoria para acompanhar a execução de perto.</p>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 18px">
+<li class="card reveal" style="padding: 26px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1; color: #B98228">01</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">Diagnóstico</h3>
+<p style="margin: 0; color: #4A5357; font-size: 15.5px">Entendemos o momento da empresa: cenário, resultados, pontos fortes, dificuldades e oportunidades, com base em dados e na conversa com você e sua liderança.</p>
+</li>
+<li class="card reveal" style="padding: 26px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1; color: #B98228">02</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">Direção</h3>
+<p style="margin: 0; color: #4A5357; font-size: 15.5px">Definimos aonde a empresa quer chegar no próximo ciclo, alinhando a visão do empresário com a realidade do negócio.</p>
+</li>
+<li class="card reveal" style="padding: 26px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1; color: #B98228">03</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">Priorização</h3>
+<p style="margin: 0; color: #4A5357; font-size: 15.5px">Nem tudo pode ser feito ao mesmo tempo. Avaliamos impacto, esforço e urgência de cada iniciativa para decidir o que vem primeiro e concentrar energia no que realmente faz diferença.</p>
+</li>
+<li class="card reveal" style="padding: 26px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1; color: #B98228">04</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">Metas e indicadores</h3>
+<p style="margin: 0; color: #4A5357; font-size: 15.5px">Transformamos as prioridades em objetivos claros e mensuráveis, com os indicadores certos para saber se a empresa está no caminho.</p>
+</li>
+<li class="card reveal" style="padding: 26px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1; color: #B98228">05</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">Plano de ação</h3>
+<p style="margin: 0; color: #4A5357; font-size: 15.5px">Desdobramos cada objetivo em ações práticas, com responsáveis e prazos definidos, para que todos saibam o que fazer.</p>
+</li>
+<li class="card reveal" style="padding: 26px; background: #F9F3E7; border: 1.5px dashed #B98228; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap">
+<span style="font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1; color: #B98228">06</span>
+<span style="padding: 4px 10px; border-radius: 999px; background: #163B45; color: #FFFFFF; font-size: 12px; font-weight: 600">Continuidade</span>
+</div>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600; color: #163B45">Acompanhamento</h3>
+<p style="margin: 0; color: #4A5357; font-size: 15.5px">Para quem segue com a consultoria: acompanhamos a execução, analisamos os resultados e ajustamos a rota sempre que necessário, para que o plano não fique na gaveta.</p>
+</li>
+</ol>
+</section>
+
+<!-- Entregas -->
+<section id="entregas" style="background: #FFFFFF; border-top: 1px solid #DDE3E5; border-bottom: 1px solid #DDE3E5">
+<div class="gg sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 56px; align-items: center">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">O que você recebe</p>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Clareza para decidir e um plano para executar</h2>
+<p style="margin: 0; font-size: 18px; color: #4A5357">Ao final, você e sua equipe sabem exatamente aonde a empresa quer chegar, o que precisa ser feito e quem é responsável por cada passo.</p>
+<p style="margin: 0; font-size: 16px; color: #5A6368">Atendimento presencial ou online, para empresas de todo o Brasil.</p>
+</div>
+<div class="reveal" style="padding: 36px; background: #163B45; color: #FFFFFF; border-radius: 22px">
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; font-size: 17px">
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2B864" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:3px"><circle cx="12" cy="12" r="10" stroke-width="1.6"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg><span>Diagnóstico do momento atual da empresa</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2B864" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:3px"><circle cx="12" cy="12" r="10" stroke-width="1.6"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg><span>Objetivos definidos para o próximo ciclo</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2B864" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:3px"><circle cx="12" cy="12" r="10" stroke-width="1.6"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg><span>Prioridades organizadas por impacto, esforço e urgência</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2B864" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:3px"><circle cx="12" cy="12" r="10" stroke-width="1.6"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg><span>Metas com indicadores para acompanhar os resultados</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2B864" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:3px"><circle cx="12" cy="12" r="10" stroke-width="1.6"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg><span>Plano de ação com responsáveis e prazos</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2B864" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:3px"><circle cx="12" cy="12" r="10" stroke-width="1.6"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg><span>Alinhamento da equipe com a direção da empresa</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2B864" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:3px"><circle cx="12" cy="12" r="10" stroke-width="1.6"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg><span>Opção de continuidade com a consultoria para acompanhar a execução</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Ponte com a consultoria -->
+<section class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 16px">
+<div class="reveal" style="padding: 36px; border: 1px solid #DDE3E5; background: #FFFFFF; border-radius: 22px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 40rem">
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 30px; line-height: 1.15; color: #163B45">Quer ir além do planejamento?</h2>
+<p style="margin: 0; color: #4A5357">Na consultoria em gestão, acompanho a empresa de forma contínua, organizando processos, dados e estratégia, com a liderança unindo tudo.</p>
+</div>
+<a href="index.html" class="btn2" style="padding: 13px 23px; border: 1.5px solid #163B45; color: #163B45; text-decoration: none; font-weight: 600; border-radius: 999px">Conhecer a consultoria →</a>
+</div>
+</section>
+
+<!-- Contato -->
+<section id="contato" style="background: #0F2A31; color: #FFFFFF">
+<div class="gg sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 48px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1">Vamos planejar o próximo ciclo da sua empresa?</h2>
+<p style="margin: 0; color: #D3DEE0; font-size: 18px">Na primeira conversa, entendo o momento do seu negócio e explico como o planejamento estratégico pode ser construído para a sua realidade. Sem compromisso.</p>
+<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20o%20Planejamento%20Estrat%C3%A9gico%20para%20a%20minha%20empresa." style="align-self: flex-start; margin-top: 8px; padding: 15px 26px; background: #E2B864; color: #1B1408; text-decoration: none; font-weight: 600; border-radius: 999px">Quero planejar minha empresa</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<a href="mailto:marinamelohaas@gmail.com" style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 18px 22px; background: #163B45; color: #FFFFFF; text-decoration: none; border-radius: 14px"><span style="color: #E2B864; font-weight: 600">E-mail</span><span>marinamelohaas@gmail.com</span></a>
+<a href="https://wa.me/5551997392746" style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 18px 22px; background: #163B45; color: #FFFFFF; text-decoration: none; border-radius: 14px"><span style="color: #E2B864; font-weight: 600">WhatsApp</span><span>(51) 99739-2746</span></a>
+<a href="https://www.linkedin.com/in/marina-melo-haas-2a09a618a/" style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 18px 22px; background: #163B45; color: #FFFFFF; text-decoration: none; border-radius: 14px"><span style="color: #E2B864; font-weight: 600">LinkedIn</span><span>marina-melo-haas</span></a>
+</div>
+</div>
+<div style="max-width: 1180px; margin: 0 auto; padding: 24px; border-top: 1px solid #24454D; font-size: 14px; color: #A9BBBF">Marina Juliane Melo Haas | Consultoria em Gestão Empresarial | CRA-RS nº RS-056707/O</div>
+</section>
+
+</div>
+<script>
+(function(){
+var nav=document.getElementById('topo'),btn=document.getElementById('menu-btn');
+btn.onclick=function(){var a=nav.classList.toggle('aberto');btn.setAttribute('aria-expanded',a?'true':'false');btn.setAttribute('aria-label',a?'Fechar menu':'Abrir menu');};
+document.querySelectorAll('#menu a').forEach(function(l){l.addEventListener('click',function(){nav.classList.remove('aberto');btn.setAttribute('aria-expanded','false');});});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var el=e.target,irm=[].slice.call(el.parentNode.children).filter(function(c){return c.classList.contains('reveal')}),idx=irm.indexOf(el);el.style.transitionDelay=(idx>0?idx*90:0)+'ms';el.classList.add('in');io.unobserve(el);setTimeout(function(){el.style.transitionDelay=''},1200);}});},{threshold:0.15});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});}
+else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});}
+})();
+</script>
+</body>
+</html>
