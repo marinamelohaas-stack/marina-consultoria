@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+<script>document.documentElement.className+=" js"</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marina Melo Haas – Consultoria em Gestão</title>
@@ -12,8 +13,78 @@
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
 a{color:#163B45}a:hover{color:#8A5F17}
+h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
+
+.reveal{transition:opacity .7s ease, transform .7s ease}
+.js .reveal{opacity:0;transform:translateY(22px)}
+.js .reveal.in{opacity:1;transform:none}
+.card{transition:opacity .7s ease, transform .35s ease, box-shadow .35s ease, border-color .35s ease}
+.card.in:hover,.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(22,59,69,.10);border-color:#B98228 !important}
+#triade .node{cursor:pointer;outline:none}
+#triade .node .dot{transition:fill .35s ease, transform .3s ease;transform-box:fill-box;transform-origin:center}
+#triade .node text{transition:fill .35s ease;pointer-events:none}
+#triade .node:hover .dot,#triade .node:focus-visible .dot{transform:scale(1.08)}
+#triade .node:focus-visible .dot{stroke-width:4}
+#triade .ring{opacity:0;transform-box:fill-box;transform-origin:center}
+#triade .node.ativo .ring{animation:pulso 2s ease-out infinite}
+@keyframes pulso{0%{opacity:.55;transform:scale(1)}100%{opacity:0;transform:scale(1.45)}}
+#triade line{transition:stroke .4s ease, stroke-width .4s ease}
+#c-card>*{transition:opacity .3s ease, transform .3s ease}
+#c-card.trocando>*{opacity:0;transform:translateY(8px)}
+#c-items li{display:flex;gap:10px;align-items:flex-start;opacity:0;transform:translateX(-8px);animation:entra .45s ease forwards}
+@keyframes entra{to{opacity:1;transform:none}}
+.seta{width:44px;height:44px;border-radius:999px;border:1.5px solid #C7D3D6;background:#FFFFFF;color:#163B45;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .25s, color .25s, border-color .25s}
+.seta:hover{background:#163B45;color:#FFFFFF;border-color:#163B45}
+.pil{min-height:44px;padding:10px 20px;border-radius:999px;font:inherit;font-size:16px;font-weight:600;cursor:pointer;transition:background .3s, color .3s, border-color .3s, transform .2s;background:#FFFFFF;color:#163B45;border:1.5px solid #C7D3D6}
+.pil:hover{border-color:#163B45;transform:translateY(-2px)}
+.pil[aria-selected="true"]{background:#163B45;color:#FFFFFF;border-color:#163B45}
+.pil.lid[aria-selected="true"]{background:#B98228;color:#1B1408;border-color:#B98228}
+
+
+@media (min-width: 900px){.hero{grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr) !important}}
+.btn1{transition:background .25s, transform .2s}.btn1:hover{background:#0F2A31 !important;color:#FFFFFF !important;transform:translateY(-2px)}
+.btn2{transition:border-color .25s, transform .2s}.btn2:hover{border-color:#163B45 !important;transform:translateY(-2px)}
+#menu-btn{display:none}
+@media (max-width: 760px){
+ #topo>div{padding:12px 20px !important;flex-wrap:nowrap !important}
+ #topo>div>a{font-size:20px !important}
+ #menu-btn{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:1.5px solid #C7D3D6;border-radius:12px;background:#FFFFFF;cursor:pointer}
+ #menu-btn span{display:block;height:2px;background:#163B45;border-radius:2px;transition:transform .3s, opacity .3s}
+ #topo.aberto #menu-btn span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+ #topo.aberto #menu-btn span:nth-child(2){opacity:0}
+ #topo.aberto #menu-btn span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+ #menu{display:none !important;position:absolute;top:100%;left:0;right:0;background:#F4F6F5;border-bottom:1px solid #DDE3E5;padding:8px 20px 20px;flex-direction:column;align-items:stretch !important;gap:2px !important;box-shadow:0 12px 24px rgba(22,59,69,.08)}
+ #topo.aberto #menu{display:flex !important}
+ #menu a{padding:14px 4px !important;font-size:17px !important;border-bottom:1px solid #E5EAEB}
+ #menu a:last-child{border-bottom:0;margin-top:12px;text-align:center;padding:14px !important}
+ .sec{padding-top:64px !important;padding-bottom:64px !important;padding-left:20px !important;padding-right:20px !important;gap:28px !important}
+ .hero{padding:40px 20px 64px !important;gap:44px !important}
+ .sec0{padding:0 20px 64px !important;gap:24px !important}
+ .secx{padding:64px 0 !important;gap:28px !important}
+ .secx>div:first-child{padding:0 20px !important}
+ .nums{padding:40px 20px !important;gap:24px !important}
+ .bignum{font-size:44px !important}
+ .h1{font-size:34px !important;line-height:1.1 !important}
+ .selo-hero{left:12px !important;bottom:16px !important;padding:12px 14px !important}
+ .h2{font-size:30px !important;line-height:1.15 !important}
+ .quote{font-size:25px !important;line-height:1.3 !important}
+ .gg{gap:32px !important}
+ .fotohero{max-width:calc(100% - 14px) !important;justify-self:start !important}
+ .moldura{top:14px !important;left:14px !important;right:-14px !important;bottom:-14px !important;border-radius:20px !important}
+ .selo{left:12px !important;bottom:16px !important;padding:14px 16px !important}
+ .fig{width:280px !important}
+ #faixa{padding-left:20px !important;gap:16px !important}
+ #faixa>div{gap:16px !important}
+ .card,article{padding:24px !important}
+ #c-card{min-height:0 !important}
+ #c-card h3{font-size:26px !important}
+ .hero a{flex:1 1 auto;text-align:center}
+ body{font-size:16px}
+}
+@media (max-width: 380px){.h1{font-size:31px !important}.h2{font-size:28px !important}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}.js .reveal{opacity:1;transform:none}#c-items li{opacity:1;transform:none}}
 </style>
 
 </head>
@@ -22,10 +93,11 @@ a{color:#163B45}a:hover{color:#8A5F17}
 <div style="font-family: 'Instrument Sans', 'Segoe UI', Helvetica, sans-serif; color: #2B3135; background: #F4F6F5; font-size: 17px; line-height: 1.6">
 
 <!-- Navegação -->
-<nav style="position: sticky; top: 0; z-index: 10; background: rgba(244,246,245,0.95); border-bottom: 1px solid #DDE3E5">
+<nav id="topo" style="position: sticky; top: 0; z-index: 10; background: rgba(244,246,245,0.95); border-bottom: 1px solid #DDE3E5">
 <div style="max-width: 1180px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
 <a href="#inicio" style="font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 600; color: #163B45; text-decoration: none">Marina Melo Haas</a>
-<div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center">
+<button type="button" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+<div id="menu" style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center">
 <a href="#para-quem" style="padding: 10px 12px; text-decoration: none; font-size: 15px; color: #2B3135">Para quem</a>
 <a href="#metodo" style="padding: 10px 12px; text-decoration: none; font-size: 15px; color: #2B3135">Método</a>
 <a href="#jornada" style="padding: 10px 12px; text-decoration: none; font-size: 15px; color: #2B3135">Como funciona</a>
@@ -36,65 +108,75 @@ a{color:#163B45}a:hover{color:#8A5F17}
 </nav>
 
 <!-- Hero -->
-<header id="inicio" style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center">
-<div style="display: flex; flex-direction: column; gap: 22px">
-<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Consultoria e mentoria em gestão empresarial</p>
-<h1 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 58px; line-height: 1.04; letter-spacing: -0.015em; color: #163B45">Toda empresa que cresce precisa de uma gestão à altura.</h1>
-<p style="margin: 0; font-size: 18px; color: #4A5357; max-width: 36rem">Sou Marina Melo Haas, administradora e consultora de gestão. Trabalho ao lado de empresários de pequenas e médias empresas para estruturar processos, transformar números em decisões e definir prioridades claras para o crescimento.</p>
-<p style="margin: 0; font-size: 18px; color: #4A5357; max-width: 36rem">Com método, acompanhamento próximo e feedbacks honestos, ajudo você a construir uma empresa mais organizada, com uma equipe que assume responsabilidades e uma gestão que não depende de você para tudo.</p>
-<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px">
-<a href="#contato" style="padding: 14px 24px; background: #163B45; color: #FFFFFF; text-decoration: none; font-weight: 600; border-radius: 999px">Agendar conversa de diagnóstico</a>
-<a href="#metodo" style="padding: 13px 23px; border: 1.5px solid #163B45; color: #163B45; text-decoration: none; font-weight: 600; border-radius: 999px">Conhecer o método</a>
+<header id="inicio" class="hero" style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 64px; align-items: center">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8A5F17"><span aria-hidden="true" style="width: 28px; height: 2px; background: #B98228; border-radius: 2px"></span>Consultoria e mentoria em gestão</p>
+<h1 class="h1" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 48px; line-height: 1.08; letter-spacing: -0.01em; color: #163B45; max-width: 15em">Toda empresa que cresce precisa de uma gestão à altura.</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #2B3135; max-width: 34rem">Sou Marina Melo Haas, administradora e consultora de gestão. Trabalho ao lado de empresários de pequenas e médias empresas que querem crescer com mais organização, clareza e segurança nas decisões.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5A6368; max-width: 34rem">Com método, acompanhamento próximo e um olhar estratégico sobre o negócio, ajudo você a organizar a operação, transformar números em decisões e desenvolver uma equipe que assume responsabilidades.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px">
+<a href="#contato" class="btn1" style="padding: 14px 24px; background: #163B45; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 999px; display: inline-flex; align-items: center; gap: 8px">Agendar conversa de diagnóstico <span aria-hidden="true">→</span></a>
+<a href="#metodo" class="btn2" style="padding: 13px 23px; border: 1.5px solid #C7D3D6; color: #163B45; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 999px">Conhecer o método</a>
+</div>
+<div style="display: flex; gap: 8px 22px; flex-wrap: wrap; margin-top: 4px; font-size: 14px; color: #5A6368">
+<span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B98228" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Presencial ou online</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B98228" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Empresas de todo o Brasil</span>
 </div>
 </div>
-<div style="position: relative; justify-self: center; width: 100%; max-width: 440px">
-<div style="position: absolute; top: 22px; left: 22px; right: -22px; bottom: -22px; border: 2px solid #B98228; border-radius: 24px"></div>
-<img src="retrato.jpg" alt="Retrato de Marina Melo Haas" style="position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px">
+<div class="fotohero reveal" style="position: relative; justify-self: center; width: 100%; max-width: 400px">
+<div class="moldura" style="position: absolute; top: 18px; left: 18px; right: -18px; bottom: -18px; border: 2px solid #B98228; border-radius: 24px"></div>
+<img src="retrato.jpg" alt="Retrato de Marina Melo Haas" style="position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; background: #E4E9EA">
+<div class="selo-hero" style="position: absolute; left: -28px; bottom: 36px; padding: 14px 18px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 16px; box-shadow: 0 14px 30px rgba(22,59,69,0.12); display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Tríade da Gestão</span>
+<span style="font-size: 15px; font-weight: 600; color: #163B45">Processos · Números · Estratégia</span>
+</div>
 </div>
 </header>
 
 <!-- Números -->
 <section style="background: #163B45; color: #FFFFFF">
-<div style="max-width: 1180px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
+<div class="nums" style="max-width: 1180px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
 <div style="display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'Newsreader', Georgia, serif; font-size: 54px; line-height: 1; color: #E2B864">7 anos</span>
+<span class="bignum" style="font-family: 'Newsreader', Georgia, serif; font-size: 54px; line-height: 1; color: #E2B864"><span class="conta" data-alvo="7">7</span> anos</span>
 <span style="font-size: 15px; color: #D3DEE0">de experiência em consultoria de gestão</span>
 </div>
 <div style="display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'Newsreader', Georgia, serif; font-size: 54px; line-height: 1; color: #E2B864">100+</span>
+<span class="bignum" style="font-family: 'Newsreader', Georgia, serif; font-size: 54px; line-height: 1; color: #E2B864"><span class="conta" data-alvo="100">100</span>+</span>
 <span style="font-size: 15px; color: #D3DEE0">empresas de serviços, indústria e comércio acompanhadas</span>
 </div>
 <div style="display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'Newsreader', Georgia, serif; font-size: 54px; line-height: 1; color: #E2B864">MBA USP</span>
+<span class="bignum" style="font-family: 'Newsreader', Georgia, serif; font-size: 54px; line-height: 1; color: #E2B864">MBA USP</span>
 <span style="font-size: 15px; color: #D3DEE0">em Gestão Financeira e de Negócios</span>
 </div>
 </div>
 </section>
 
 <!-- Para quem -->
-<section id="para-quem" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 36px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
+<section id="para-quem" class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div class="cab2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 20px 64px; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 14px">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Para quem é</p>
-<h2 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Você se reconhece em algum destes sinais?</h2>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Você se reconhece em algum destes sinais?</h2>
+</div>
 <p style="margin: 0; font-size: 18px; color: #4A5357">Trabalho com donos de pequenas e médias empresas que já construíram um negócio de verdade, mas sentem que ele ainda depende demais da intuição, da memória e da capacidade de resolver tudo pessoalmente.</p>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px">
-<article style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 20px">
+<article class="card reveal" style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"></path></svg>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Tudo passa por você</h3>
 <p style="margin: 0; color: #4A5357">A equipe espera sua aprovação para quase tudo, e você não consegue se afastar sem que algo pare.</p>
 </article>
-<article style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<article class="card reveal" style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Fatura, mas não sabe quanto sobra</h3>
 <p style="margin: 0; color: #4A5357">Os números chegam tarde, ou chegam, mas não ajudam a decidir o que fazer na próxima semana.</p>
 </article>
-<article style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<article class="card reveal" style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Decisões no feeling</h3>
 <p style="margin: 0; color: #4A5357">Seu instinto é bom, mas as prioridades mudam toda semana e os planos ficam no papel.</p>
 </article>
-<article style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<article class="card reveal" style="padding: 30px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M3 20v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v1M15 14.5a4 4 0 0 1 6 3.5v2"></path></svg>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Equipe sem papéis claros</h3>
 <p style="margin: 0; color: #4A5357">As pessoas trabalham muito, mas nem sempre sabem o que é responsabilidade de quem.</p>
@@ -104,44 +186,65 @@ a{color:#163B45}a:hover{color:#8A5F17}
 
 <!-- Crença -->
 <section style="background: #0F2A31; color: #FFFFFF">
-<div style="max-width: 980px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 24px">
+<div class="sec" style="max-width: 980px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 24px">
 <svg width="44" height="44" viewBox="0 0 24 24" fill="#E2B864" aria-hidden="true"><path d="M4 18v-5c0-4 2-7 6-8l1 2c-2 1-3 2.5-3 5h3v6H4zm9 0v-5c0-4 2-7 6-8l1 2c-2 1-3 2.5-3 5h3v6h-7z"></path></svg>
-<p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1.25; font-weight: 400">Todo empresário tem visão e conhece seu negócio. O que muitas vezes falta é alguém ao seu lado para trazer método à gestão, transformar ideias em ações e oferecer os feedbacks honestos necessários para evoluir.</p>
+<p class="quote" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1.25; font-weight: 400">Todo empresário tem visão e conhece seu negócio. O que muitas vezes falta é alguém ao seu lado para trazer método à gestão, transformar ideias em ações e oferecer os feedbacks honestos necessários para evoluir.</p>
 <p style="margin: 0; font-size: 18px; color: #D3DEE0">Esse é o meu papel: ajudar você a tomar decisões com mais clareza, estruturar a gestão e transformar planos em resultados, acompanhando de perto a realidade da sua empresa.</p>
 </div>
 </section>
 
 <!-- Método -->
-<section id="metodo" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
+<section id="metodo" class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">O método</p>
-<h2 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">A Tríade da Gestão</h2>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">A Tríade da Gestão</h2>
 <p style="margin: 0; font-size: 18px; color: #4A5357">Três pilares que sustentam uma empresa bem gerida: processos, números e estratégia. No centro, a liderança, que transforma informações e planos em decisões e comportamentos no dia a dia.</p>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center">
-<div style="width: 100%; max-width: 460px; justify-self: center">
-<svg viewBox="0 0 400 370" width="100%" role="img" aria-label="Diagrama da Tríade da Gestão: processos, números e estratégia nos vértices de um triângulo, com a liderança no centro">
+<div class="gg" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 48px; align-items: center">
+<div class="reveal" style="width: 100%; max-width: 460px; justify-self: center; display: flex; flex-direction: column; align-items: center; gap: 10px">
+<svg id="triade" viewBox="0 0 400 370" width="100%" aria-label="Diagrama interativo da Tríade da Gestão: processos, números e estratégia nos vértices de um triângulo, com a liderança no centro">
 <polygon points="200,50 50,310 350,310" fill="none" stroke="#C7D3D6" stroke-width="2"></polygon>
-<line x1="200" y1="50" x2="200" y2="215" stroke="#C7D3D6" stroke-width="1.5" stroke-dasharray="4 5"></line>
-<line x1="50" y1="310" x2="200" y2="215" stroke="#C7D3D6" stroke-width="1.5" stroke-dasharray="4 5"></line>
-<line x1="350" y1="310" x2="200" y2="215" stroke="#C7D3D6" stroke-width="1.5" stroke-dasharray="4 5"></line>
-<circle cx="200" cy="50" r="44" id="n0" fill="#163B45" stroke="#163B45" stroke-width="2"></circle>
-<text x="200" y="55" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t0" fill="#FFFFFF">Processos</text>
-<circle cx="50" cy="310" r="44" id="n1" fill="#FFFFFF" stroke="#163B45" stroke-width="2"></circle>
+<line id="l0" x1="200" y1="50" x2="200" y2="215" stroke="#C7D3D6" stroke-width="1.5" stroke-dasharray="4 5"></line>
+<line id="l1" x1="50" y1="310" x2="200" y2="215" stroke="#C7D3D6" stroke-width="1.5" stroke-dasharray="4 5"></line>
+<line id="l2" x1="350" y1="310" x2="200" y2="215" stroke="#C7D3D6" stroke-width="1.5" stroke-dasharray="4 5"></line>
+<g class="node" data-i="0" tabindex="0" role="button" aria-label="Ver detalhes do pilar Processos">
+<circle class="ring" cx="200" cy="50" r="44" fill="none" stroke="#163B45" stroke-width="2"></circle>
+<circle class="dot" id="n0" cx="200" cy="50" r="44" fill="#FFFFFF" stroke="#163B45" stroke-width="2"></circle>
+<text x="200" y="55" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t0" fill="#163B45">Processos</text>
+</g>
+<g class="node" data-i="1" tabindex="0" role="button" aria-label="Ver detalhes do pilar Números">
+<circle class="ring" cx="50" cy="310" r="44" fill="none" stroke="#163B45" stroke-width="2"></circle>
+<circle class="dot" id="n1" cx="50" cy="310" r="44" fill="#FFFFFF" stroke="#163B45" stroke-width="2"></circle>
 <text x="50" y="315" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t1" fill="#163B45">Números</text>
-<circle cx="350" cy="310" r="44" id="n2" fill="#FFFFFF" stroke="#163B45" stroke-width="2"></circle>
+</g>
+<g class="node" data-i="2" tabindex="0" role="button" aria-label="Ver detalhes do pilar Estratégia">
+<circle class="ring" cx="350" cy="310" r="44" fill="none" stroke="#163B45" stroke-width="2"></circle>
+<circle class="dot" id="n2" cx="350" cy="310" r="44" fill="#FFFFFF" stroke="#163B45" stroke-width="2"></circle>
 <text x="350" y="315" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t2" fill="#163B45">Estratégia</text>
-<circle cx="200" cy="215" r="50" id="n3" fill="#FFFFFF" stroke="#B98228" stroke-width="2.5"></circle>
+</g>
+<g class="node" data-i="3" tabindex="0" role="button" aria-label="Ver detalhes do pilar Liderança">
+<circle class="ring" cx="200" cy="215" r="50" fill="none" stroke="#B98228" stroke-width="2"></circle>
+<circle class="dot" id="n3" cx="200" cy="215" r="50" fill="#FFFFFF" stroke="#B98228" stroke-width="2.5"></circle>
 <text x="200" y="220" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="15" font-weight="600" id="t3" fill="#163B45">Liderança</text>
+</g>
 </svg>
+<p style="margin: 0; font-size: 14px; color: #5A6368; display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11V5a2 2 0 0 1 4 0v6M13 10a2 2 0 0 1 4 0v2M17 11a2 2 0 0 1 4 0v4a6 6 0 0 1-6 6h-2a6 6 0 0 1-5-3l-3-5a2 2 0 0 1 3-2l2 2V9"></path></svg>Toque em cada pilar para explorar</p>
 </div>
-<div style="display: flex; flex-direction: column; gap: 22px">
-<div id="pilares" style="display: flex; gap: 8px; flex-wrap: wrap"></div>
-<article style="padding: 34px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 22px; display: flex; flex-direction: column; gap: 14px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 16px">
+<div id="pilares" role="tablist" aria-label="Pilares da Tríade da Gestão" style="display: flex; gap: 8px; flex-wrap: wrap"></div>
+<div style="height: 3px; background: #DDE3E5; border-radius: 3px; overflow: hidden"><div id="progresso" style="height: 100%; width: 0; background: #B98228"></div></div>
+<article id="c-card" aria-live="polite" style="padding: 34px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 22px; display: flex; flex-direction: column; gap: 14px; min-height: 360px; box-sizing: border-box">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
 <span style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #8A5F17" id="c-kicker"></span>
+<span id="c-num" style="font-family: 'Newsreader', Georgia, serif; font-size: 18px; color: #8A9599"></span>
+</div>
 <h3 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 30px; line-height: 1.15; color: #163B45" id="c-title"></h3>
 <p style="margin: 0; color: #4A5357" id="c-text"></p>
-<ul id="c-items" style="margin: 4px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px"></ul>
+<ul id="c-items" style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"></ul>
+<div style="display: flex; gap: 10px; margin-top: auto; padding-top: 8px">
+<button type="button" id="ant" class="seta" aria-label="Pilar anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
+<button type="button" id="prox" class="seta" aria-label="Próximo pilar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button>
+</div>
 </article>
 </div>
 </div>
@@ -152,13 +255,13 @@ a{color:#163B45}a:hover{color:#8A5F17}
 
 <!-- Jornada (sugestão) -->
 <section style="background: #FFFFFF; border-top: 1px solid #DDE3E5; border-bottom: 1px solid #DDE3E5">
-<div style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 36px">
+<div class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">A transformação</p>
-<h2 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">De uma empresa que depende de você para uma empresa que funciona com você</h2>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">De uma empresa que depende de você para uma empresa que funciona com você</h2>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
-<article style="padding: 34px; background: #F4F6F5; border-radius: 22px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 24px">
+<article class="reveal" style="padding: 34px; background: #F4F6F5; border-radius: 22px; display: flex; flex-direction: column; gap: 14px">
 <h3 style="margin: 0; font-size: 22px; font-weight: 600; color: #5A6368">Antes</h3>
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; color: #4A5357">
 <li>Atividades que só funcionam quando o dono está presente</li>
@@ -167,7 +270,7 @@ a{color:#163B45}a:hover{color:#8A5F17}
 <li>Equipe esperando ordens em vez de assumir responsabilidades</li>
 </ul>
 </article>
-<article style="padding: 34px; background: #163B45; color: #FFFFFF; border-radius: 22px; display: flex; flex-direction: column; gap: 14px">
+<article class="reveal" style="padding: 34px; background: #163B45; color: #FFFFFF; border-radius: 22px; display: flex; flex-direction: column; gap: 14px">
 <h3 style="margin: 0; font-size: 22px; font-weight: 600; color: #E2B864">Depois</h3>
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; color: #E8EEEF">
 <li>Processos mapeados, com padrões e responsáveis definidos</li>
@@ -178,32 +281,34 @@ a{color:#163B45}a:hover{color:#8A5F17}
 </article>
 </div>
 </div>
-</section><section id="jornada" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 36px">
+</section>
+
+<section id="jornada" class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Como funciona</p>
-<h2 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">A jornada da sua empresa</h2>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">A jornada da sua empresa</h2>
 <p style="margin: 0; font-size: 18px; color: #4A5357">Cada empresa tem seu ritmo, mas o caminho segue uma lógica: primeiro entender, depois organizar, ganhar clareza e, então, direcionar.</p>
 </div>
-<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px">
-<li style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 20px">
+<li class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #B98228">01</span>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Diagnóstico</h3>
 <span style="font-size: 14px; font-weight: 600; color: #8A5F17">Mês 1</span>
 <p style="margin: 0; color: #4A5357; font-size: 16px">Imersão na operação, conversas com você e a equipe e um raio-x da tríade e da liderança. Termina com uma devolutiva e um plano de prioridades.</p>
 </li>
-<li style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<li class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #B98228">02</span>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Organização</h3>
 <span style="font-size: 14px; font-weight: 600; color: #8A5F17">Processos</span>
 <p style="margin: 0; color: #4A5357; font-size: 16px">Mapeamento das atividades, gargalos, responsabilidades e padrões, para reduzir a dependência do dono.</p>
 </li>
-<li style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<li class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #B98228">03</span>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Clareza</h3>
 <span style="font-size: 14px; font-weight: 600; color: #8A5F17">Números</span>
 <p style="margin: 0; color: #4A5357; font-size: 16px">Indicadores, margens e metas organizados em um painel simples, para decidir com base em dados.</p>
 </li>
-<li style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
+<li class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #B98228">04</span>
 <h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #163B45">Direção</h3>
 <span style="font-size: 14px; font-weight: 600; color: #8A5F17">Estratégia</span>
@@ -218,23 +323,23 @@ a{color:#163B45}a:hover{color:#8A5F17}
 
 <!-- Formato e condições (sugestão) -->
 <section style="background: #FFFFFF; border-top: 1px solid #DDE3E5; border-bottom: 1px solid #DDE3E5">
-<div style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 32px">
+<div class="sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 46rem">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Formato</p>
-<h2 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Próxima da sua operação, onde você estiver</h2>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Próxima da sua operação, onde você estiver</h2>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px">
-<article style="padding: 34px; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 24px">
+<article class="card reveal" style="padding: 34px; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#163B45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
 <h3 style="margin: 0; font-size: 21px; font-weight: 600; color: #163B45">Presencial ou online</h3>
 <p style="margin: 0; color: #4A5357">Atendo empresas de qualquer lugar do Brasil, com encontros presenciais ou a distância e acompanhamento próximo entre eles.</p>
 </article>
-<article style="padding: 34px; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<article class="card reveal" style="padding: 34px; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#163B45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>
 <h3 style="margin: 0; font-size: 21px; font-weight: 600; color: #163B45">Três meses para criar a base</h3>
 <p style="margin: 0; color: #4A5357">O início tem um compromisso de 3 meses, o tempo necessário para o diagnóstico e para as primeiras mudanças aparecerem.</p>
 </article>
-<article style="padding: 34px; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<article class="card reveal" style="padding: 34px; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#163B45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 6"></path></svg>
 <h3 style="margin: 0; font-size: 21px; font-weight: 600; color: #163B45">Depois, sem fidelidade</h3>
 <p style="margin: 0; color: #4A5357">A partir daí, o acompanhamento é mensal e pode ser encerrado quando você quiser, com aviso de 30 dias.</p>
@@ -245,19 +350,20 @@ a{color:#163B45}a:hover{color:#8A5F17}
 
 <!-- Sobre -->
 <section id="sobre" style="background: #FFFFFF; border-top: 1px solid #DDE3E5">
-<div style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 64px; align-items: start">
+<div class="gg sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 64px; align-items: start">
 <div style="position: relative; width: 100%; max-width: 460px; justify-self: center">
 <img src="quem-sou.jpg" alt="Marina Melo Haas em seu ambiente de trabalho" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border-radius: 22px">
-<div style="position: absolute; left: -18px; bottom: 28px; padding: 18px 22px; background: #163B45; color: #FFFFFF; border-radius: 16px; display: flex; flex-direction: column; gap: 2px; max-width: 240px">
-<span style="font-family: 'Newsreader', Georgia, serif; font-size: 34px; line-height: 1; color: #E2B864">7 anos</span>
+<div class="selo" style="position: absolute; left: -18px; bottom: 28px; padding: 18px 22px; background: #163B45; color: #FFFFFF; border-radius: 16px; display: flex; flex-direction: column; gap: 2px; max-width: 240px">
+<span style="font-family: 'Newsreader', Georgia, serif; font-size: 34px; line-height: 1; color: #E2B864"><span class="conta" data-alvo="7">7</span> anos</span>
 <span style="font-size: 14px; color: #D3DEE0">de experiência em consultoria de gestão</span>
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 20px">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Quem sou</p>
-<h2 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Uma empresária que aplica o que ensina</h2>
-<p style="margin: 0">Sou Marina Melo Haas, empresária e consultora de gestão. Ao longo de 7 anos, acompanhei mais de 100 empresas de serviços, indústria e comércio.</p>
-<p style="margin: 0">Meu trabalho é estar perto da operação, organizar o que precisa ser organizado e ajudar o empresário a tomar decisões com mais segurança.</p>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Conhecimento em gestão, experiência em negócios.</h2>
+<p style="margin: 0">Sou Marina Melo Haas, administradora e consultora empresarial. Ao longo de mais de 7 anos, acompanhei mais de 100 empresas dos setores de serviços, indústria e comércio.</p>
+<p style="margin: 0">Minha trajetória une conhecimento técnico e experiência prática na gestão empresarial. Atuo na organização de processos, na análise de resultados e no desenvolvimento de soluções que ajudam empresários a tomar decisões com mais clareza e segurança.</p>
+<p style="margin: 0">Acredito que uma boa gestão vai além do planejamento. Ela precisa funcionar na prática, acompanhar a realidade do negócio e criar condições para um crescimento sustentável.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px">
 <span style="padding: 8px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; background: #F4F6F5; color: #163B45">Administração, UNISC</span>
 <span style="padding: 8px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; background: #F4F6F5; color: #163B45">MBA Gestão Financeira, USP</span>
@@ -270,51 +376,51 @@ a{color:#163B45}a:hover{color:#8A5F17}
 </section>
 
 <!-- Em ação -->
-<section style="padding: 96px 0; display: flex; flex-direction: column; gap: 32px; overflow: hidden">
+<section class="secx" style="padding: 96px 0; display: flex; flex-direction: column; gap: 32px; overflow: hidden">
 <div style="max-width: 1180px; width: 100%; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Na prática</p>
-<h2 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 40px; line-height: 1.1; color: #163B45">Ao lado dos empresários e das equipes</h2>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1; color: #163B45">Ao lado dos empresários e das equipes</h2>
 </div>
 <div style="overflow: hidden; width: 100%">
 <div id="faixa" style="display: flex; gap: 24px; width: max-content; padding-left: 24px; transition: transform 900ms ease">
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-1.jpg" alt="Marina apresentando com microfone para empresários" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Conduzindo encontros com empresários</figcaption>
 </figure>
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-2.jpg" alt="Marina orientando empresários durante atividade prática" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Orientação próxima em atividades práticas</figcaption>
 </figure>
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-3.jpg" alt="Marina conduzindo imersão em sala com projeção de cases" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Estudo de cases sobre papéis e responsabilidades</figcaption>
 </figure>
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-4.jpg" alt="Marina acompanhando participantes em dinâmica de grupo" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Acompanhando de perto o trabalho das equipes</figcaption>
 </figure>
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-5.jpg" alt="Marina em conversa com participantes de uma imersão" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Troca próxima e feedbacks honestos</figcaption>
 </figure>
 <div aria-hidden="true" style="display: flex; gap: 24px">
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-1.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Conduzindo encontros com empresários</figcaption>
 </figure>
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-2.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Orientação próxima em atividades práticas</figcaption>
 </figure>
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-3.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Estudo de cases sobre papéis e responsabilidades</figcaption>
 </figure>
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-4.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Acompanhando de perto o trabalho das equipes</figcaption>
 </figure>
-<figure style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
+<figure class="fig" style="margin: 0; width: 440px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px">
 <img src="acao-5.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px">
 <figcaption style="font-size: 15px; color: #4A5357; padding: 0 4px">Troca próxima e feedbacks honestos</figcaption>
 </figure>
@@ -323,11 +429,39 @@ a{color:#163B45}a:hover{color:#8A5F17}
 </div>
 </section>
 
+<!-- Outros produtos -->
+<section id="produtos" class="sec0" style="max-width: 1180px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 32px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 12px; max-width: 46rem">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A5F17">Outros produtos</p>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 34px; line-height: 1.1; color: #163B45">Além da consultoria</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 20px">
+<article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.5"></circle></svg>
+<h3 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 24px; line-height: 1.15; color: #163B45">Planejamento Estratégico</h3>
+<p style="margin: 0; color: #4A5357; font-size: 16px">Objetivos, metas e um plano de ação claro para os próximos passos do negócio.</p>
+<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20o%20Planejamento%20Estrat%C3%A9gico." style="margin-top: auto; padding-top: 4px; color: #8A5F17; text-decoration: none; font-weight: 600; font-size: 15px">Saiba mais →</a>
+</article>
+<article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg>
+<h3 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 24px; line-height: 1.15; color: #163B45">Treinamentos</h3>
+<p style="margin: 0; color: #4A5357; font-size: 16px">Capacitações práticas em gestão e liderança para líderes e equipes.</p>
+<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20os%20Treinamentos." style="margin-top: auto; padding-top: 4px; color: #8A5F17; text-decoration: none; font-weight: 600; font-size: 15px">Saiba mais →</a>
+</article>
+<article class="card reveal" style="padding: 28px; background: #FFFFFF; border: 1px solid #DDE3E5; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8A5F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="11" rx="3"></rect><path d="M5 10a7 7 0 0 0 14 0M12 17v4M8 21h8"></path></svg>
+<h3 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 24px; line-height: 1.15; color: #163B45">Palestras</h3>
+<p style="margin: 0; color: #4A5357; font-size: 16px">Conteúdos sobre gestão e liderança para eventos e empresas.</p>
+<a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina%21%20Quero%20saber%20mais%20sobre%20as%20Palestras." style="margin-top: auto; padding-top: 4px; color: #8A5F17; text-decoration: none; font-weight: 600; font-size: 15px">Saiba mais →</a>
+</article>
+</div>
+</section>
+
 <!-- Contato -->
 <section id="contato" style="background: #0F2A31; color: #FFFFFF">
-<div style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center">
+<div class="gg sec" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 48px; align-items: center">
 <div style="display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 44px; line-height: 1.1">Vamos olhar para a sua empresa juntos?</h2>
+<h2 class="h2" style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1.1">Vamos olhar para a sua empresa juntos?</h2>
 <p style="margin: 0; color: #D3DEE0; font-size: 18px">Na primeira conversa, entendo o momento do seu negócio e mostro como a Tríade da Gestão pode ser aplicada na sua realidade. Sem compromisso.</p>
 <a href="https://wa.me/5551997392746?text=Ol%C3%A1%2C%20Marina!%20Quero%20agendar%20uma%20conversa%20de%20diagn%C3%B3stico%20para%20a%20minha%20empresa." style="align-self: flex-start; margin-top: 8px; padding: 15px 26px; background: #E2B864; color: #1B1408; text-decoration: none; font-weight: 600; border-radius: 999px">Agendar pelo WhatsApp</a>
 </div>
@@ -351,19 +485,48 @@ var defs=[
 {title:'Estratégia',kicker:'Direção',heading:'Do feeling ao plano executado',text:'Dar forma à visão do empresário, com prioridades claras e acompanhamento até a execução.',items:['Estabelecer prioridades','Avaliar oportunidades','Questionar decisões','Definir planos de ação','Acompanhar a execução']},
 {title:'Liderança',kicker:'O que conecta os pilares',heading:'Gente que transforma planos em atitudes',text:'A liderança atravessa os três pilares: é ela que leva as informações e os planos para o comportamento do dia a dia.',items:['Desenvolver o empresário como líder','Desenvolver a equipe','Oferecer feedbacks honestos','Ajudar a corrigir a rota']}
 ];
-var box=document.getElementById('pilares');
-var btns=defs.map(function(d,i){var b=document.createElement('button');b.type='button';b.textContent=d.title;b.onclick=function(){sel(i)};box.appendChild(b);return b;});
+var box=document.getElementById('pilares'),card=document.getElementById('c-card'),barra=document.getElementById('progresso');
+var reduz=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var atual=-1,auto=true,DUR=6000,t0=0,raf=null,visivel=false;
+var btns=defs.map(function(d,i){var b=document.createElement('button');b.type='button';b.className='pil'+(i===3?' lid':'');b.setAttribute('role','tab');b.textContent=d.title;b.onclick=function(){parar();sel(i)};box.appendChild(b);return b;});
+var nodes=[].slice.call(document.querySelectorAll('#triade .node'));
+nodes.forEach(function(n){var i=+n.getAttribute('data-i');n.addEventListener('click',function(){parar();sel(i)});n.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();parar();sel(i)}});});
+document.getElementById('ant').onclick=function(){parar();sel((atual+3)%4)};
+document.getElementById('prox').onclick=function(){parar();sel((atual+1)%4)};
+var check='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B98228" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><circle cx="12" cy="12" r="10" stroke-width="1.6"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg>';
+function preencher(s){var d=defs[s];
+ document.getElementById('c-kicker').textContent=d.kicker;document.getElementById('c-title').textContent=d.heading;document.getElementById('c-text').textContent=d.text;document.getElementById('c-num').textContent='0'+(s+1)+' / 04';
+ var ul=document.getElementById('c-items');ul.innerHTML='';d.items.forEach(function(t,k){var li=document.createElement('li');li.style.animationDelay=(k*70)+'ms';li.innerHTML=check+'<span></span>';li.lastChild.textContent=t;ul.appendChild(li);});}
 function sel(s){
- btns.forEach(function(b,i){b.style.cssText='min-height:44px;padding:10px 20px;border-radius:999px;font:inherit;font-size:16px;font-weight:600;cursor:pointer;'+(s===i?'background:#163B45;color:#FFFFFF;border:1.5px solid #163B45':'background:#FFFFFF;color:#163B45;border:1.5px solid #C7D3D6');});
- for(var i=0;i<4;i++){var on=s===i;document.getElementById('n'+i).setAttribute('fill',on?(i===3?'#B98228':'#163B45'):'#FFFFFF');document.getElementById('t'+i).setAttribute('fill',on?(i===3?'#1B1408':'#FFFFFF'):'#163B45');}
- var d=defs[s];document.getElementById('c-kicker').textContent=d.kicker;document.getElementById('c-title').textContent=d.heading;document.getElementById('c-text').textContent=d.text;
- var ul=document.getElementById('c-items');ul.innerHTML='';d.items.forEach(function(t){var li=document.createElement('li');li.textContent=t;ul.appendChild(li);});
+ if(s===atual)return;atual=s;
+ btns.forEach(function(b,i){b.setAttribute('aria-selected',i===s?'true':'false')});
+ nodes.forEach(function(n){var i=+n.getAttribute('data-i'),on=i===s;n.classList.toggle('ativo',on);document.getElementById('n'+i).setAttribute('fill',on?(i===3?'#B98228':'#163B45'):'#FFFFFF');document.getElementById('t'+i).setAttribute('fill',on?(i===3?'#1B1408':'#FFFFFF'):'#163B45');});
+ for(var k=0;k<3;k++){var l=document.getElementById('l'+k),on=(s===3||s===k);l.setAttribute('stroke',on?'#B98228':'#C7D3D6');l.setAttribute('stroke-width',on?'2.5':'1.5');l.setAttribute('stroke-dasharray',on?'0':'4 5');}
+ if(reduz){preencher(s);return;}
+ card.classList.add('trocando');setTimeout(function(){preencher(s);card.classList.remove('trocando')},220);
+ t0=performance.now();
 }
+function parar(){auto=false;barra.style.width='0';if(raf)cancelAnimationFrame(raf);}
+function passo(now){if(!auto)return;if(visivel){var p=(now-t0)/DUR;if(p>=1){sel((atual+1)%4);p=0;}barra.style.width=(Math.min(p,1)*100)+'%';}else{t0=now-(parseFloat(barra.style.width)||0)/100*DUR;}raf=requestAnimationFrame(passo);}
 sel(0);
+if(!reduz){raf=requestAnimationFrame(passo);}else{auto=false;}
+if('IntersectionObserver' in window){
+ new IntersectionObserver(function(es){visivel=es[0].isIntersecting;},{threshold:0.35}).observe(document.getElementById('metodo'));
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var el=e.target,pai=el.parentNode,irm=[].slice.call(pai.children).filter(function(c){return c.classList.contains('reveal')}),idx=irm.indexOf(el);el.style.transitionDelay=(idx>0?idx*90:0)+'ms';el.classList.add('in');io.unobserve(el);setTimeout(function(){el.style.transitionDelay=''},1200);}});},{threshold:0.15});
+ document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+ var contas=document.querySelectorAll('.conta');
+ if(!reduz){contas.forEach(function(el){el.textContent='0';el.style.display='inline-block';el.style.textAlign='right';el.style.fontVariantNumeric='tabular-nums';el.style.minWidth=(String(el.getAttribute('data-alvo')).length*0.5)+'em';});}
+ var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target,alvo=+el.getAttribute('data-alvo'),dur=alvo>20?2200:1600,ini=null;co.unobserve(el);if(reduz){el.textContent=alvo;return;}
+  setTimeout(function(){requestAnimationFrame(function f(n){if(ini===null)ini=n;var p=Math.min((n-ini)/dur,1),v=Math.round(alvo*(1-Math.pow(1-p,3)));el.textContent=v;if(p<1){requestAnimationFrame(f);}else{el.animate&&el.animate([{transform:'scale(1)'},{transform:'scale(1.15)'},{transform:'scale(1)'}],{duration:420,easing:'ease-out'});}});},250);
+ });},{threshold:0.5});
+ contas.forEach(function(el){co.observe(el)});
+}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});visivel=true;}
 var faixa=document.getElementById('faixa'),pos=0;
+function passoF(){var f=faixa.querySelector('figure');return f.getBoundingClientRect().width+parseFloat(getComputedStyle(faixa).columnGap||24);}
+(function(){var nav=document.getElementById('topo'),btn=document.getElementById('menu-btn');btn.onclick=function(){var a=nav.classList.toggle('aberto');btn.setAttribute('aria-expanded',a?'true':'false');btn.setAttribute('aria-label',a?'Fechar menu':'Abrir menu');};document.querySelectorAll('#menu a').forEach(function(l){l.addEventListener('click',function(){nav.classList.remove('aberto');btn.setAttribute('aria-expanded','false');});});})();
 setInterval(function(){
- if(pos>=5){pos=0;faixa.style.transition='none';faixa.style.transform='translateX(0)';setTimeout(function(){pos=1;faixa.style.transition='transform 900ms ease';faixa.style.transform='translateX(-464px)';},60);}
- else{pos++;faixa.style.transition='transform 900ms ease';faixa.style.transform='translateX(-'+(pos*464)+'px)';}
+ if(pos>=5){pos=0;faixa.style.transition='none';faixa.style.transform='translateX(0)';setTimeout(function(){pos=1;faixa.style.transition='transform 900ms ease';faixa.style.transform='translateX(-'+passoF()+'px)';},60);}
+ else{pos++;faixa.style.transition='transform 900ms ease';faixa.style.transform='translateX(-'+(pos*passoF())+'px)';}
 },3500);
 })();
 </script>
